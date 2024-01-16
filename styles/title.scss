@@ -1,0 +1,64 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+
+
+    @include onDesktop {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+
+    &--gradient {
+        background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        background-size: 100%;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--gray {
+        color: $color-gray;
+    }
+
+    &--blue {
+        color: $color-blue;
+    }
+    
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    @include onDesktop {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+    }
+}
+
+.small-title {
+    text-transform: uppercase;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 1px;
+
+    @include hover(color, rgba(240, 20, 90, 1));
+}
